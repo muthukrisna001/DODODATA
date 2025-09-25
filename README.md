@@ -115,24 +115,6 @@ http://localhost:8000
 
 **That's it! 🎉 The application should now be running successfully.**
 
-## 🔧 Configuration
-
-### No API Keys Required!
-**The app works completely out of the box!**
-
-- **Historical Facts**: Curated content, no external APIs needed
-- **News Content**: Sample tech news, no API keys required
-- **Images**: Free Wikimedia Commons integration
-- **All features work immediately** without any setup or registration!
-
-### Optional: Environment Variables
-Create a `.env` file in the root directory if you want to customize settings:
-```env
-DEBUG=True
-SECRET_KEY=your-secret-key-here
-ALLOWED_HOSTS=localhost,127.0.0.1
-```
-
 ## 📖 How to Use
 
 ### 🎮 **Interface Overview**
