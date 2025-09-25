@@ -35,3 +35,39 @@ The dodo became a global symbol of extinction and human impact on nature.
 The phrase “as dead as a dodo” is still used to mean something completely gone.
 
 Interestingly, scientists are now exploring the possibility of “de-extinction” using DNA from preserved remains, though that’s still in research stages.
+
+---
+
+## 🎨 DODODATA Project
+
+This repository is named after the dodo bird as a tribute to preserving knowledge and preventing the "extinction" of important information about technology and computing history.
+
+**DODODATA** is a comprehensive Django-powered web application featuring:
+
+🚀 **Dual-Mode Interface:**
+- 📚 IT & AI Historical Facts (25+ curated facts)
+- 📰 Latest Technology News (10+ current articles)
+
+🎨 **Free AI Image Generator:**
+- Powered by Pollinations.ai and Stable Diffusion
+- Generate 6 unique images per prompt
+- No API keys required
+
+🌟 **Key Features:**
+- Beautiful vintage terminal aesthetic with glassmorphism effects
+- Responsive design for all devices
+- Session-based content tracking (no repeats)
+- Wikipedia integration for educational links
+- Local image caching for fast access
+
+Just as we work to preserve endangered species, DODODATA works to preserve and share important knowledge about technology history while embracing cutting-edge AI innovations.
+
+📖 **For complete project details, see:** `About DODO - Full Project Description.txt`
+
+🚀 **Quick Start:**
+```bash
+pip install django==5.2.6 djangorestframework requests python-dotenv
+python manage.py migrate
+python manage.py runserver
+# Visit: http://localhost:8000
+```

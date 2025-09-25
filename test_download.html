@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download Test</title>
+</head>
+<body>
+    <h1>Download Test</h1>
+    <button id="testDownload">Test Download</button>
+    
+    <script>
+        function downloadImage(imageUrl, imageName) {
+            console.log('Downloading image:', imageUrl);
+            
+            // Convert relative URL to absolute URL if needed
+            let fullUrl = imageUrl;
+            if (imageUrl.startsWith('/')) {
+                fullUrl = window.location.origin + imageUrl;
+            }
+            
+            console.log('Full URL:', fullUrl);
+            
+            // Create a temporary anchor element for download
+            const link = document.createElement('a');
+            link.href = fullUrl;
+            link.download = `AI_Generated_${Date.now()}.jpg`;
+            link.style.display = 'none';
+            
+            // Add to DOM, click, and remove
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            console.log('Download initiated');
+        }
+        
+        document.getElementById('testDownload').addEventListener('click', function() {
+            downloadImage('/static/generated_images/pollinations_c29b2fb85bc2784acfaa9d4df147e925.jpg', 'test_image');
+        });
+    </script>
+</body>
+</html>
